@@ -35,6 +35,7 @@ augroup plugin-tabpagecd
   autocmd TabEnter *
   \   if exists('t:cwd')
   \ |   cd `=t:cwd`
+  \ |   unlet t:cwd
   \ | endif
 
   autocmd TabLeave *
